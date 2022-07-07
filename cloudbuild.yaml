@@ -1,0 +1,11 @@
+steps:
+  # Install dependencies
+  - name: python
+    entrypoint: pip
+    args: ["install", "-r", "requirements.txt", "--user"]
+    
+    # importing packages
+  - name: 'python'
+    args: ['python3','deploy.py']
+    
+    
