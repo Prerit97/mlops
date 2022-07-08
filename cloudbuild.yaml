@@ -12,6 +12,6 @@ steps:
     
   # Upload compiled pipeline to GCS.
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'ml_winequality.json', 'gs://']
+    args: ['cp', 'ml_winequality.json', 'gs://mlops-bucket-wineqaulity']
     id:  'upload'
     waitFor: ['compile']  
