@@ -15,3 +15,9 @@ steps:
     args: ['cp', 'ml_winequality.json', 'gs://mlops-bucket-wineqaulity']
     id:  'upload'
     waitFor: ['compile']  
+  
+    # start pipeline
+  - name: 'python'
+    entrypoint: 'python'
+    args: ['start.py']
+    id: 'run'
