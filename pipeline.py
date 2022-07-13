@@ -190,7 +190,7 @@ def deploy_winequality(
     
 @dsl.pipeline(
     # Default pipeline root. You can override it when submitting the pipeline.
-    pipeline_root="gs://mlops-bucket-wineqaulity",
+    pipeline_root="bigquery.googleapis.com/projects/mlops-353508/datasets/123",
     # A name for the pipeline. Use to determine the pipeline Context.
     name="pipeline-winequality",
     
